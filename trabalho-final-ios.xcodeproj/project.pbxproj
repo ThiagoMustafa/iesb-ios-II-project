@@ -32,7 +32,6 @@
 		FEE32C082300EE0C00140E93 /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE32C032300EE0C00140E93 /* liked.png */; };
 		FEE32C092300EE0C00140E93 /* poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEE32C042300EE0C00140E93 /* poster.jpg */; };
 		FEE4D06923031B65001FABF2 /* SimilarFilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4D06823031B65001FABF2 /* SimilarFilmTableViewCell.swift */; };
-		FEE742F22303BA0A00DD0EC6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE742F12303BA0A00DD0EC6 /* LoginViewController.swift */; };
 		FEE742F42303C0C600DD0EC6 /* CadastroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		FEE32C032300EE0C00140E93 /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		FEE32C042300EE0C00140E93 /* poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poster.jpg; sourceTree = "<group>"; };
 		FEE4D06823031B65001FABF2 /* SimilarFilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarFilmTableViewCell.swift; sourceTree = "<group>"; };
-		FEE742F12303BA0A00DD0EC6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +139,6 @@
 				D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */,
 				FEE4D06823031B65001FABF2 /* SimilarFilmTableViewCell.swift */,
 				FEE2E73623036DD200F9B298 /* FavoritesViewController.swift */,
-				FEE742F12303BA0A00DD0EC6 /* LoginViewController.swift */,
 				FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */,
 				FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */,
 				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
@@ -376,7 +373,6 @@
 				FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */,
 				FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */,
 				D393FCCF2301BF240077A303 /* FilmDetailsViewController.swift in Sources */,
-				FEE742F22303BA0A00DD0EC6 /* LoginViewController.swift in Sources */,
 				FEE4D06923031B65001FABF2 /* SimilarFilmTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
