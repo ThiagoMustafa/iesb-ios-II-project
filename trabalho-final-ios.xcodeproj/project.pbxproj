@@ -13,6 +13,10 @@
 		D393FCD42301C2F40077A303 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D393FCD32301C2F40077A303 /* data.json */; };
 		D393FCD62301C80F0077A303 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */; };
 		FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */; };
+		FEA8B3DC235CB7E900536ABA /* avangers-ultimate-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */; };
+		FEA8B3DD235CB7E900536ABA /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */; };
+		FEA8B3DE235CB7E900536ABA /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */; };
+		FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E1235E51D200536ABA /* MapViewController.swift */; };
 		FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC4D65A22FF98F300046F85 /* AppDelegate.swift */; };
 		FEC4D66022FF98F300046F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC4D65E22FF98F300046F85 /* Main.storyboard */; };
 		FEC4D66222FF98F700046F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC4D66122FF98F700046F85 /* Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		D393FCD32301C2F40077A303 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultimate-poster.jpg"; path = "../../../../../../../Downloads/avangers-ultimate-poster.jpg"; sourceTree = "<group>"; };
+		FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultron-poster.jpg"; path = "../../../../../../../Downloads/avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
+		FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ant-man-poster.jpg"; path = "../../../../../../../Downloads/ant-man-poster.jpg"; sourceTree = "<group>"; };
+		FEA8B3E1235E51D200536ABA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEC4D65722FF98F300046F85 /* trabalho-final-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trabalho-final-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC4D65A22FF98F300046F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEC4D65F22FF98F300046F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 				FEE742F12303BA0A00DD0EC6 /* LoginViewController.swift */,
 				FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */,
 				FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */,
+				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +213,9 @@
 		FEE32BFF2300E99200140E93 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */,
+				FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */,
+				FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */,
 				FEE32C032300EE0C00140E93 /* liked.png */,
 				FEE32C022300EE0C00140E93 /* logo.png */,
 				FEE32C042300EE0C00140E93 /* poster.jpg */,
@@ -320,13 +332,16 @@
 				FEE2E73B2303707900F9B298 /* userData.json in Resources */,
 				FEE32C062300EE0C00140E93 /* user-logo.png in Resources */,
 				FEE32C052300EE0C00140E93 /* user-logged.jpg in Resources */,
+				FEA8B3DC235CB7E900536ABA /* avangers-ultimate-poster.jpg in Resources */,
 				FEE32C082300EE0C00140E93 /* liked.png in Resources */,
 				FEE32C072300EE0C00140E93 /* logo.png in Resources */,
 				FEC4D66522FF98F700046F85 /* LaunchScreen.storyboard in Resources */,
 				FEC4D66222FF98F700046F85 /* Assets.xcassets in Resources */,
 				FEE32C092300EE0C00140E93 /* poster.jpg in Resources */,
+				FEA8B3DE235CB7E900536ABA /* ant-man-poster.jpg in Resources */,
 				D393FCD42301C2F40077A303 /* data.json in Resources */,
 				FEC4D66022FF98F300046F85 /* Main.storyboard in Resources */,
+				FEA8B3DD235CB7E900536ABA /* avangers-ultron-poster.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +373,7 @@
 				FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */,
 				FEE742F42303C0C600DD0EC6 /* CadastroTableViewController.swift in Sources */,
 				FEE2E73923036E5100F9B298 /* User.swift in Sources */,
+				FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */,
 				FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */,
 				D393FCCF2301BF240077A303 /* FilmDetailsViewController.swift in Sources */,
 				FEE742F22303BA0A00DD0EC6 /* LoginViewController.swift in Sources */,

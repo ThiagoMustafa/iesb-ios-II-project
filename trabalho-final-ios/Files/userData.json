@@ -3,56 +3,32 @@
     "ImageProfile":"user-logged.jpg",
     "FavoriteFilms":[
         {
-            "Title":"Capitã Marvel",
-            "Description":"Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls.",
-            "Year":"2019",
-            "Duration":"1h44",
-            "PosterImage":"poster.jpg",
+            "Title":"Os Vingadores - Era de Ultron",
+            "Description":"Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron.",
+            "Year":"2015",
+            "Duration":"2h23",
+            "PosterImage":"avangers-ultron-poster.jpg",
             "Genero":"Ação, Aventura, Animação",
+            "Rating": 7.3,
             "SimilarFilms":[
                 {
                     "Title":"Capitã Marvel",
                     "PosterImage":"poster.jpg"
                 },
                 {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
+                    "Title":"Homem Formiga",
+                    "PosterImage":"ant-man-poster.jpg"
                 },
                 {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
-                },
-                {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
+                    "Title":"Os Vingadores - Ultimato",
+                    "PosterImage":"avangers-ultimate-poster.jpg"
                 }
-            ]
-        },
-        {
-            "Title":"Capitã Marvel",
-            "Description":"Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls.",
-            "Year":"2019",
-            "Duration":"1h44",
-            "PosterImage":"poster.jpg",
-            "Genero":"Ação, Aventura, Animação",
-            "SimilarFilms":[
-                {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
-                },
-                {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
-                },
-                {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
-                },
-                {
-                    "Title":"Capitã Marvel",
-                    "PosterImage":"poster.jpg"
-                }
-            ]
+            ],
+            "Location": {
+                "Latitude": 26.011280,
+                "Longitude": -80.142967,
+                "Description": "Hollywood"
+            }
         }
     ]
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXn-4y-FmM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -46,12 +46,12 @@
         <!--Mapas-->
         <scene sceneID="ZyH-Ad-QO0">
             <objects>
-                <viewController title="Mapas" id="IbA-d7-3Pk" sceneMemberID="viewController">
+                <viewController title="Mapas" id="IbA-d7-3Pk" customClass="MapViewController" customModule="trabalho_final_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cA6-0o-Sc6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4OZ-pU-q45">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4OZ-pU-q45">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </mapView>
                         </subviews>
@@ -65,6 +65,9 @@
                         <viewLayoutGuide key="safeArea" id="pbh-h7-IYS"/>
                     </view>
                     <navigationItem key="navigationItem" id="MJX-7k-jcv"/>
+                    <connections>
+                        <outlet property="mapView" destination="4OZ-pU-q45" id="1hR-tv-env"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iA1-d9-cO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

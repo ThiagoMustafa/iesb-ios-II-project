@@ -15,11 +15,19 @@ struct Film : Codable {
     let Duration: String
     let PosterImage: String
     let Genero: String
+    let Rating: Decimal
+    let Location: Location
     let SimilarFilms: [SimilarFilm]
 }
 
 struct SimilarFilm: Codable {
     let PosterImage: String
     let Title: String
+}
+
+struct Location: Codable {
+    let Latitude: Decimal
+    let Longitude: Decimal
+    let Description: String
 }
 
