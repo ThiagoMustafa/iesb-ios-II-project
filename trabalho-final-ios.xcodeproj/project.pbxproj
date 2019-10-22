@@ -17,6 +17,8 @@
 		FEA8B3DD235CB7E900536ABA /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */; };
 		FEA8B3DE235CB7E900536ABA /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */; };
 		FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E1235E51D200536ABA /* MapViewController.swift */; };
+		FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */; };
+		FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */; };
 		FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC4D65A22FF98F300046F85 /* AppDelegate.swift */; };
 		FEC4D66022FF98F300046F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC4D65E22FF98F300046F85 /* Main.storyboard */; };
 		FEC4D66222FF98F700046F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC4D66122FF98F700046F85 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultron-poster.jpg"; path = "../../../../../../../Downloads/avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
 		FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ant-man-poster.jpg"; path = "../../../../../../../Downloads/ant-man-poster.jpg"; sourceTree = "<group>"; };
 		FEA8B3E1235E51D200536ABA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFilmsTableViewCell.swift; sourceTree = "<group>"; };
 		FEC4D65722FF98F300046F85 /* trabalho-final-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trabalho-final-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC4D65A22FF98F300046F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEC4D65F22FF98F300046F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */,
 				FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */,
 				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
+				FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */,
+				FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -365,7 +371,9 @@
 			files = (
 				D393FCD12301BFAF0077A303 /* Film.swift in Sources */,
 				D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */,
+				FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */,
 				FEE2E73723036DD200F9B298 /* FavoritesViewController.swift in Sources */,
+				FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */,
 				D393FCD62301C80F0077A303 /* FilmTableViewCell.swift in Sources */,
 				FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */,
 				FEE742F42303C0C600DD0EC6 /* CadastroTableViewController.swift in Sources */,

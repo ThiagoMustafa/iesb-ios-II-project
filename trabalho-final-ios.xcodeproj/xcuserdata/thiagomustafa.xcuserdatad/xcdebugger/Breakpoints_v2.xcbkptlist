@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "trabalho-final-ios/Controllers/FilmDetailsViewController.swift"
-            timestampString = "587451505.095228"
+            timestampString = "593414461.415215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "trabalho-final-ios/Controllers/FilmsTableViewController.swift"
-            timestampString = "593387462.891278"
+            timestampString = "593412538.437333"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "trabalho-final-ios/Controllers/FavoritesViewController.swift"
-            timestampString = "593385740.783152"
+            timestampString = "593414461.415486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "trabalho-final-ios/Controllers/FilmsTableViewController.swift"
-            timestampString = "593387462.891726"
+            timestampString = "593412538.437636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -106,12 +106,215 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "trabalho-final-ios/Controllers/FilmsTableViewController.swift"
-            timestampString = "593387462.89184"
+            timestampString = "593412538.437758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+            timestampString = "593414461.415792"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+            timestampString = "593414461.41642"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+            timestampString = "593414461.416971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "FavoritesTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.user.getter : trabalho_final_ios.User"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.88719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.user.setter : trabalho_final_ios.User"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.899246"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "205">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.user.modify : trabalho_final_ios.User"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.910695"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.user.modify : trabalho_final_ios.User with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.921656"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.init(style: __C.UITableViewStyle) -&gt; trabalho_final_ios.FavoritesTableViewController"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.933099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; trabalho_final_ios.FavoritesTableViewController"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409438.951856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trabalho_final_ios.FavoritesTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;trabalho_final_ios.FavoritesTableViewController&gt;"
+                  moduleName = "trabalho-final-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagomustafa/Desktop/IESB/IOS/trabalho-final-ios/trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+                  timestampString = "593409439.00133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesFilmsTableViewCell.swift"
+            timestampString = "593414461.417446"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "prepare(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+            timestampString = "593414461.417523"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trabalho-final-ios/Controllers/FavoritesTableViewController.swift"
+            timestampString = "593414461.41798"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

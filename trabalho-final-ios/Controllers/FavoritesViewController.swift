@@ -15,6 +15,7 @@ class FavoritesViewController: UIViewController {
     @IBOutlet weak var lbUserName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lbNumberFilms: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadUser()
