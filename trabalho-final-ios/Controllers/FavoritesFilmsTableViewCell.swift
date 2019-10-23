@@ -13,8 +13,8 @@ class FavoritesFilmsTableViewCell: UITableViewCell {
     @IBOutlet weak var ivUserProfile: UIImageView!
     @IBOutlet weak var lbUserName: UILabel!
     @IBOutlet weak var lbCountFavoriteFilms: UILabel!
-    //@IBOutlet weak var tvFavoriteFilms: UITableView!
-    
+    @IBOutlet weak var ListFilmsTableView: UITableView!
+    var favoriteFilms = [Film]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +30,27 @@ class FavoritesFilmsTableViewCell: UITableViewCell {
     func prepare(with user:User){
         ivUserProfile.image = UIImage(named: user.ImageProfile)
         lbUserName.text = user.UserName
-        lbCountFavoriteFilms.text = "0"//String(user.FavoriteFilms.count)
+        lbCountFavoriteFilms.text = String(user.FavoriteFilms.count)
+        favoriteFilms = user.FavoriteFilms
+        print(favoriteFilms)
     }
 
+}
+
+extension FavoritesFilmsTableViewCell: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favoriteFilms.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFavoriteFilms", for: indexPath) as! FilmTableViewCell
+        
+        let film = favoriteFilms[indexPath.row]
+        
+        cell.prepare(with: film)
+        
+        return cell
+    }
+    
+    
 }
