@@ -25,9 +25,10 @@ class FavoritesTableViewController: UITableViewController {
     func loadUser()
     {
         let fileURL = Bundle.main.url(forResource: "userData.json", withExtension: nil)!
-        let jsonData = try! Data(contentsOf: fileURL)
         do {
+            let jsonData = try Data(contentsOf: fileURL)
             user = try JSONDecoder().decode(User.self, from: jsonData)
+            tableView.reloadData()
         } catch {
             print(error.localizedDescription)
         }
@@ -40,17 +41,29 @@ class FavoritesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 1 + user.FavoriteFilms.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userData", for: indexPath) as! FavoritesFilmsTableViewCell
-        cell.prepare(with: user)
-
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "userData", for: indexPath) as! FavoritesFilmsTableViewCell
+            cell.prepare(with: user)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteFilmsCell", for: indexPath) as! FilmTableViewCell
+            cell.prepare(with: user.FavoriteFilms[indexPath.row - 1])
+            
+            return cell
+        }
     }
  
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 358
+        }
+        return 191
+    }
 
     /*
     // Override to support conditional editing of the table view.

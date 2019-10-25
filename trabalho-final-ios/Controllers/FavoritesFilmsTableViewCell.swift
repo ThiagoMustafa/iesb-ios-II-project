@@ -13,12 +13,15 @@ class FavoritesFilmsTableViewCell: UITableViewCell {
     @IBOutlet weak var ivUserProfile: UIImageView!
     @IBOutlet weak var lbUserName: UILabel!
     @IBOutlet weak var lbCountFavoriteFilms: UILabel!
-    @IBOutlet weak var ListFilmsTableView: UITableView!
+    
     var favoriteFilms = [Film]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //favoriteFilmsTableView.hidden = true
+        
+//        // Register cell
+//        favoriteFilmsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "favoriteFilmsCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,13 +34,31 @@ class FavoritesFilmsTableViewCell: UITableViewCell {
         ivUserProfile.image = UIImage(named: user.ImageProfile)
         lbUserName.text = user.UserName
         lbCountFavoriteFilms.text = String(user.FavoriteFilms.count)
-        favoriteFilms = user.FavoriteFilms
+//        favoriteFilms = user.FavoriteFilms
+//        favoriteFilmsTableView.dataSource = self
+//        favoriteFilmsTableView.delegate = self
+//        favoriteFilmsTableView.isScrollEnabled = true
+//        favoriteFilmsTableView.reloadData()
         print(favoriteFilms)
     }
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return favoriteFilms.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellFavoriteFilms", for: indexPath) as! FilmTableViewCell
+//
+//        let film = favoriteFilms[indexPath.row]
+//
+//        cell.prepare(with: film)
+//
+//        return cell
+//    }
 
 }
 
-extension FavoritesFilmsTableViewCell: UITableViewDataSource{
+/*extension FavoritesFilmsTableViewCell: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favoriteFilms.count
     }
@@ -53,4 +74,4 @@ extension FavoritesFilmsTableViewCell: UITableViewDataSource{
     }
     
     
-}
+}*/

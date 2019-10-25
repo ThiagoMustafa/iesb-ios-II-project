@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A4FA49236264C20046F490 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4FA48236264C20046F490 /* UserTableViewCell.swift */; };
+		92A4FA4D23627C100046F490 /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4A23627C100046F490 /* ant-man-poster.jpg */; };
+		92A4FA4E23627C100046F490 /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */; };
+		92A4FA4F23627C100046F490 /* avangers-ultimate-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */; };
 		D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */; };
 		D393FCCF2301BF240077A303 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */; };
 		D393FCD12301BFAF0077A303 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD02301BFAF0077A303 /* Film.swift */; };
 		D393FCD42301C2F40077A303 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D393FCD32301C2F40077A303 /* data.json */; };
 		D393FCD62301C80F0077A303 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */; };
 		FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */; };
-		FEA8B3DC235CB7E900536ABA /* avangers-ultimate-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */; };
-		FEA8B3DD235CB7E900536ABA /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */; };
-		FEA8B3DE235CB7E900536ABA /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */; };
 		FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E1235E51D200536ABA /* MapViewController.swift */; };
 		FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */; };
 		FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */; };
@@ -55,15 +56,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92A4FA48236264C20046F490 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		92A4FA4A23627C100046F490 /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ant-man-poster.jpg"; path = "../../../../../../Downloads/ant-man-poster.jpg"; sourceTree = "<group>"; };
+		92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultron-poster.jpg"; path = "../../../../../../Downloads/avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
+		92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultimate-poster.jpg"; path = "../../../../../../Downloads/avangers-ultimate-poster.jpg"; sourceTree = "<group>"; };
 		D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewController.swift; sourceTree = "<group>"; };
 		D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 		D393FCD02301BFAF0077A303 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		D393FCD32301C2F40077A303 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
-		FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultimate-poster.jpg"; path = "../../../../../../../Downloads/avangers-ultimate-poster.jpg"; sourceTree = "<group>"; };
-		FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultron-poster.jpg"; path = "../../../../../../../Downloads/avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
-		FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ant-man-poster.jpg"; path = "../../../../../../../Downloads/ant-man-poster.jpg"; sourceTree = "<group>"; };
 		FEA8B3E1235E51D200536ABA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFilmsTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
 				FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */,
 				FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */,
+				92A4FA48236264C20046F490 /* UserTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,9 +219,9 @@
 		FEE32BFF2300E99200140E93 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				FEA8B3DB235CB7E900536ABA /* ant-man-poster.jpg */,
-				FEA8B3D9235CB7E800536ABA /* avangers-ultimate-poster.jpg */,
-				FEA8B3DA235CB7E900536ABA /* avangers-ultron-poster.jpg */,
+				92A4FA4A23627C100046F490 /* ant-man-poster.jpg */,
+				92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */,
+				92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */,
 				FEE32C032300EE0C00140E93 /* liked.png */,
 				FEE32C022300EE0C00140E93 /* logo.png */,
 				FEE32C042300EE0C00140E93 /* poster.jpg */,
@@ -335,16 +338,16 @@
 				FEE2E73B2303707900F9B298 /* userData.json in Resources */,
 				FEE32C062300EE0C00140E93 /* user-logo.png in Resources */,
 				FEE32C052300EE0C00140E93 /* user-logged.jpg in Resources */,
-				FEA8B3DC235CB7E900536ABA /* avangers-ultimate-poster.jpg in Resources */,
 				FEE32C082300EE0C00140E93 /* liked.png in Resources */,
 				FEE32C072300EE0C00140E93 /* logo.png in Resources */,
 				FEC4D66522FF98F700046F85 /* LaunchScreen.storyboard in Resources */,
 				FEC4D66222FF98F700046F85 /* Assets.xcassets in Resources */,
 				FEE32C092300EE0C00140E93 /* poster.jpg in Resources */,
-				FEA8B3DE235CB7E900536ABA /* ant-man-poster.jpg in Resources */,
 				D393FCD42301C2F40077A303 /* data.json in Resources */,
+				92A4FA4D23627C100046F490 /* ant-man-poster.jpg in Resources */,
 				FEC4D66022FF98F300046F85 /* Main.storyboard in Resources */,
-				FEA8B3DD235CB7E900536ABA /* avangers-ultron-poster.jpg in Resources */,
+				92A4FA4F23627C100046F490 /* avangers-ultimate-poster.jpg in Resources */,
+				92A4FA4E23627C100046F490 /* avangers-ultron-poster.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +374,7 @@
 			files = (
 				D393FCD12301BFAF0077A303 /* Film.swift in Sources */,
 				D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */,
+				92A4FA49236264C20046F490 /* UserTableViewCell.swift in Sources */,
 				FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */,
 				FEE2E73723036DD200F9B298 /* FavoritesViewController.swift in Sources */,
 				FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */,
@@ -487,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -542,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -556,15 +560,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "trabalho-final-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagomustafa.trabalho-final-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -573,15 +580,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "trabalho-final-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagomustafa.trabalho-final-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -29,6 +29,33 @@
                 "Longitude": -80.142967,
                 "Description": "Hollywood"
             }
+        },{
+            "Title":"Os Vingadores 2 - Era de Ultron",
+            "Description":"Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron.",
+            "Year":"2015",
+            "Duration":"2h23",
+            "PosterImage":"avangers-ultron-poster.jpg",
+            "Genero":"Ação, Aventura, Animação",
+            "Rating": 7.3,
+            "SimilarFilms":[
+                {
+                    "Title":"Capitã Marvel",
+                    "PosterImage":"poster.jpg"
+                },
+                {
+                    "Title":"Homem Formiga",
+                    "PosterImage":"ant-man-poster.jpg"
+                },
+                {
+                    "Title":"Os Vingadores - Ultimato",
+                    "PosterImage":"avangers-ultimate-poster.jpg"
+                }
+            ],
+            "Location": {
+                "Latitude": 26.011280,
+                "Longitude": -80.142967,
+                "Description": "Hollywood"
+            }
         }
     ]
 }
