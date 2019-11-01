@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92A4FA49236264C20046F490 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4FA48236264C20046F490 /* UserTableViewCell.swift */; };
-		92A4FA4D23627C100046F490 /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4A23627C100046F490 /* ant-man-poster.jpg */; };
-		92A4FA4E23627C100046F490 /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */; };
-		92A4FA4F23627C100046F490 /* avangers-ultimate-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */; };
+		926F8672236BB479009E5E69 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F8671236BB479009E5E69 /* DetailsTableViewController.swift */; };
+		926F8675236BB747009E5E69 /* FilmHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F8674236BB747009E5E69 /* FilmHeaderTableViewCell.swift */; };
+		926F8677236BB782009E5E69 /* DetailsHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F8676236BB782009E5E69 /* DetailsHeaderTableViewCell.swift */; };
+		926F8679236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F8678236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift */; };
+		926F867B236BB7D2009E5E69 /* FilmLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F867A236BB7D2009E5E69 /* FilmLocationTableViewCell.swift */; };
+		926F867D236BB800009E5E69 /* SimilarFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F867C236BB800009E5E69 /* SimilarFilmsTableViewCell.swift */; };
+		92CD9411236B9E870003BCCA /* avangers-ultimate-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92CD940E236B9E870003BCCA /* avangers-ultimate-poster.jpg */; };
+		92CD9412236B9E870003BCCA /* avangers-ultron-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92CD940F236B9E870003BCCA /* avangers-ultron-poster.jpg */; };
+		92CD9413236B9E870003BCCA /* ant-man-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92CD9410236B9E870003BCCA /* ant-man-poster.jpg */; };
 		D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */; };
 		D393FCCF2301BF240077A303 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */; };
 		D393FCD12301BFAF0077A303 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD02301BFAF0077A303 /* Film.swift */; };
@@ -26,7 +31,6 @@
 		FEC4D66522FF98F700046F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC4D66322FF98F700046F85 /* LaunchScreen.storyboard */; };
 		FEC4D67022FF98F700046F85 /* trabalho_final_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC4D66F22FF98F700046F85 /* trabalho_final_iosTests.swift */; };
 		FEC4D67B22FF98F700046F85 /* trabalho_final_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC4D67A22FF98F700046F85 /* trabalho_final_iosUITests.swift */; };
-		FEE2E73723036DD200F9B298 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2E73623036DD200F9B298 /* FavoritesViewController.swift */; };
 		FEE2E73923036E5100F9B298 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2E73823036E5100F9B298 /* User.swift */; };
 		FEE2E73B2303707900F9B298 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = FEE2E73A2303707900F9B298 /* userData.json */; };
 		FEE32C052300EE0C00140E93 /* user-logged.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEE32C002300EE0C00140E93 /* user-logged.jpg */; };
@@ -56,10 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92A4FA48236264C20046F490 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		92A4FA4A23627C100046F490 /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ant-man-poster.jpg"; path = "../../../../../../Downloads/ant-man-poster.jpg"; sourceTree = "<group>"; };
-		92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultron-poster.jpg"; path = "../../../../../../Downloads/avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
-		92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "avangers-ultimate-poster.jpg"; path = "../../../../../../Downloads/avangers-ultimate-poster.jpg"; sourceTree = "<group>"; };
+		926F8671236BB479009E5E69 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		926F8674236BB747009E5E69 /* FilmHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		926F8676236BB782009E5E69 /* DetailsHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		926F8678236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		926F867A236BB7D2009E5E69 /* FilmLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmLocationTableViewCell.swift; sourceTree = "<group>"; };
+		926F867C236BB800009E5E69 /* SimilarFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarFilmsTableViewCell.swift; sourceTree = "<group>"; };
+		92CD940E236B9E870003BCCA /* avangers-ultimate-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "avangers-ultimate-poster.jpg"; sourceTree = "<group>"; };
+		92CD940F236B9E870003BCCA /* avangers-ultron-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "avangers-ultron-poster.jpg"; sourceTree = "<group>"; };
+		92CD9410236B9E870003BCCA /* ant-man-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ant-man-poster.jpg"; sourceTree = "<group>"; };
 		D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewController.swift; sourceTree = "<group>"; };
 		D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 		D393FCD02301BFAF0077A303 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
@@ -81,7 +90,6 @@
 		FEC4D67622FF98F700046F85 /* trabalho-final-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trabalho-final-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC4D67A22FF98F700046F85 /* trabalho_final_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trabalho_final_iosUITests.swift; sourceTree = "<group>"; };
 		FEC4D67C22FF98F700046F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEE2E73623036DD200F9B298 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		FEE2E73823036E5100F9B298 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FEE2E73A2303707900F9B298 /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		FEE32C002300EE0C00140E93 /* user-logged.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "user-logged.jpg"; sourceTree = "<group>"; };
@@ -118,6 +126,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926F8673236BB6C1009E5E69 /* FilmDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */,
+				FEE4D06823031B65001FABF2 /* SimilarFilmTableViewCell.swift */,
+				926F8671236BB479009E5E69 /* DetailsTableViewController.swift */,
+				926F8674236BB747009E5E69 /* FilmHeaderTableViewCell.swift */,
+				926F8676236BB782009E5E69 /* DetailsHeaderTableViewCell.swift */,
+				926F8678236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift */,
+				926F867A236BB7D2009E5E69 /* FilmLocationTableViewCell.swift */,
+				926F867C236BB800009E5E69 /* SimilarFilmsTableViewCell.swift */,
+			);
+			path = FilmDetails;
+			sourceTree = "<group>";
+		};
+		926F867E236BB81C009E5E69 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		926F867F236BB83E009E5E69 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		926F8680236BB8A0009E5E69 /* FilmsList */ = {
+			isa = PBXGroup;
+			children = (
+				D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */,
+				D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */,
+			);
+			path = FilmsList;
+			sourceTree = "<group>";
+		};
+		926F8681236BB8DE009E5E69 /* FavoriteFilms */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */,
+				FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */,
+			);
+			path = FavoriteFilms;
+			sourceTree = "<group>";
+		};
+		926F8682236BB8F9009E5E69 /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
+			);
+			path = UserLocation;
+			sourceTree = "<group>";
+		};
+		926F8683236BB93D009E5E69 /* SimilarFilms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SimilarFilms;
+			sourceTree = "<group>";
+		};
 		D393FCC92301BCCD0077A303 /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,17 +212,13 @@
 		D393FCCD2301BEB40077A303 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D393FCCB2301BEAD0077A303 /* FilmsTableViewController.swift */,
-				D393FCCE2301BF240077A303 /* FilmDetailsViewController.swift */,
-				D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */,
-				FEE4D06823031B65001FABF2 /* SimilarFilmTableViewCell.swift */,
-				FEE2E73623036DD200F9B298 /* FavoritesViewController.swift */,
-				FEE742F32303C0C600DD0EC6 /* CadastroTableViewController.swift */,
-				FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */,
-				FEA8B3E1235E51D200536ABA /* MapViewController.swift */,
-				FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */,
-				FEA8B3E5235E74D200536ABA /* FavoritesFilmsTableViewCell.swift */,
-				92A4FA48236264C20046F490 /* UserTableViewCell.swift */,
+				926F8683236BB93D009E5E69 /* SimilarFilms */,
+				926F8682236BB8F9009E5E69 /* UserLocation */,
+				926F8681236BB8DE009E5E69 /* FavoriteFilms */,
+				926F8680236BB8A0009E5E69 /* FilmsList */,
+				926F867F236BB83E009E5E69 /* Register */,
+				926F867E236BB81C009E5E69 /* Login */,
+				926F8673236BB6C1009E5E69 /* FilmDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,9 +287,9 @@
 		FEE32BFF2300E99200140E93 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				92A4FA4A23627C100046F490 /* ant-man-poster.jpg */,
-				92A4FA4C23627C100046F490 /* avangers-ultimate-poster.jpg */,
-				92A4FA4B23627C100046F490 /* avangers-ultron-poster.jpg */,
+				92CD9410236B9E870003BCCA /* ant-man-poster.jpg */,
+				92CD940E236B9E870003BCCA /* avangers-ultimate-poster.jpg */,
+				92CD940F236B9E870003BCCA /* avangers-ultron-poster.jpg */,
 				FEE32C032300EE0C00140E93 /* liked.png */,
 				FEE32C022300EE0C00140E93 /* logo.png */,
 				FEE32C042300EE0C00140E93 /* poster.jpg */,
@@ -338,16 +406,16 @@
 				FEE2E73B2303707900F9B298 /* userData.json in Resources */,
 				FEE32C062300EE0C00140E93 /* user-logo.png in Resources */,
 				FEE32C052300EE0C00140E93 /* user-logged.jpg in Resources */,
+				92CD9411236B9E870003BCCA /* avangers-ultimate-poster.jpg in Resources */,
 				FEE32C082300EE0C00140E93 /* liked.png in Resources */,
 				FEE32C072300EE0C00140E93 /* logo.png in Resources */,
 				FEC4D66522FF98F700046F85 /* LaunchScreen.storyboard in Resources */,
 				FEC4D66222FF98F700046F85 /* Assets.xcassets in Resources */,
 				FEE32C092300EE0C00140E93 /* poster.jpg in Resources */,
+				92CD9413236B9E870003BCCA /* ant-man-poster.jpg in Resources */,
 				D393FCD42301C2F40077A303 /* data.json in Resources */,
-				92A4FA4D23627C100046F490 /* ant-man-poster.jpg in Resources */,
 				FEC4D66022FF98F300046F85 /* Main.storyboard in Resources */,
-				92A4FA4F23627C100046F490 /* avangers-ultimate-poster.jpg in Resources */,
-				92A4FA4E23627C100046F490 /* avangers-ultron-poster.jpg in Resources */,
+				92CD9412236B9E870003BCCA /* avangers-ultron-poster.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,20 +440,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926F867B236BB7D2009E5E69 /* FilmLocationTableViewCell.swift in Sources */,
 				D393FCD12301BFAF0077A303 /* Film.swift in Sources */,
+				926F8672236BB479009E5E69 /* DetailsTableViewController.swift in Sources */,
 				D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */,
-				92A4FA49236264C20046F490 /* UserTableViewCell.swift in Sources */,
+				926F867D236BB800009E5E69 /* SimilarFilmsTableViewCell.swift in Sources */,
 				FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */,
-				FEE2E73723036DD200F9B298 /* FavoritesViewController.swift in Sources */,
+				926F8679236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift in Sources */,
 				FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */,
 				D393FCD62301C80F0077A303 /* FilmTableViewCell.swift in Sources */,
 				FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */,
 				FEE742F42303C0C600DD0EC6 /* CadastroTableViewController.swift in Sources */,
 				FEE2E73923036E5100F9B298 /* User.swift in Sources */,
 				FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */,
+				926F8675236BB747009E5E69 /* FilmHeaderTableViewCell.swift in Sources */,
 				FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */,
 				D393FCCF2301BF240077A303 /* FilmDetailsViewController.swift in Sources */,
 				FEE4D06923031B65001FABF2 /* SimilarFilmTableViewCell.swift in Sources */,
+				926F8677236BB782009E5E69 /* DetailsHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

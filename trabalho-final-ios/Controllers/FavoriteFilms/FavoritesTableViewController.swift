@@ -12,14 +12,18 @@ class FavoritesTableViewController: UITableViewController {
     var user = User(UserName: "",ImageProfile: "", FavoriteFilms: [])
     
     override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear was just called")
         super.viewWillAppear(true)
         loadUser()
     }
     
     override func viewDidLoad() {
-        print("viewDidLoad was just called")
         super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! FilmDetailsViewController
+        let film = user.FavoriteFilms[tableView.indexPathForSelectedRow!.row - 1]
+            vc.filmDetail = film
     }
     
     func loadUser()

@@ -30,14 +30,18 @@
                 "Description": "Hollywood"
             }
         },{
-            "Title":"Os Vingadores 2 - Era de Ultron",
-            "Description":"Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron.",
-            "Year":"2015",
-            "Duration":"2h23",
-            "PosterImage":"avangers-ultron-poster.jpg",
+            "Title":"Os Vingadores - Ultimato",
+            "Description":"Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.",
+            "Year":"2019",
+            "Duration":"3h",
+            "PosterImage":"avangers-ultimate-poster.jpg",
             "Genero":"Ação, Aventura, Animação",
-            "Rating": 7.3,
+            "Rating": 8.5,
             "SimilarFilms":[
+                {
+                    "Title":"Os Vingadores - Era de Ultron",
+                    "PosterImage":"avangers-ultron-poster.jpg"
+                },
                 {
                     "Title":"Capitã Marvel",
                     "PosterImage":"poster.jpg"
@@ -45,10 +49,6 @@
                 {
                     "Title":"Homem Formiga",
                     "PosterImage":"ant-man-poster.jpg"
-                },
-                {
-                    "Title":"Os Vingadores - Ultimato",
-                    "PosterImage":"avangers-ultimate-poster.jpg"
                 }
             ],
             "Location": {

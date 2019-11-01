@@ -12,7 +12,7 @@ class FilmsTableViewController: UITableViewController {
         let vc = segue.destination as! FilmDetailsViewController
         let film = films[tableView.indexPathForSelectedRow!.row]
         vc.filmDetail = film
-    }
+    }   
     
     func loadFilms()
     {
