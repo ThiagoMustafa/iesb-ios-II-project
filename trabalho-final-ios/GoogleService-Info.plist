@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>526979669717-87kjsfc4ddbrd0crk7ilhjspn75vgsj9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.526979669717-87kjsfc4ddbrd0crk7ilhjspn75vgsj9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4Fz4N1UPEx93uJC3pIdCunD1bkYrEJ9M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>526979669717</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>thiagomustafa.trabalho-final-ios</string>
+	<key>PROJECT_ID</key>
+	<string>my-films-7e63c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-films-7e63c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:526979669717:ios:45f0103dbb7dcf54920c5c</string>
+	<key>DATABASE_URL</key>
+	<string>https://my-films-7e63c.firebaseio.com</string>
+</dict>
+</plist>

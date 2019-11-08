@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,13 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
+        
         let usuarioLogadoName = NSNotification.Name(rawValue: "usuarioLogado")
         NotificationCenter.default.addObserver(self, selector: #selector(apresentarTelaInicial), name: usuarioLogadoName, object: nil)
-        
+
         let logoutName = NSNotification.Name("usuarioLogout")
         NotificationCenter.default.addObserver(self, selector: #selector(apresentarTelaInicial), name: logoutName, object: nil)
         
         apresentarTelaInicial()
+
         return true
     }
     
