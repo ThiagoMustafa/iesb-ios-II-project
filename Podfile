@@ -11,6 +11,7 @@ target 'trabalho-final-ios' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
 
   target 'trabalho-final-iosTests' do
     inherit! :search_paths

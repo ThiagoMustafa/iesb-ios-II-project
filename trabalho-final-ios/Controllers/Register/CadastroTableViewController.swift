@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class CadastroTableViewController: UITableViewController {
 
@@ -25,11 +27,77 @@ class CadastroTableViewController: UITableViewController {
         return 6
     }
     
+    func validaCampos() -> String?{
+        if (tfName.text ?? "").isEmpty ||
+            (tfEmail.text ?? "").isEmpty ||
+            (tfSenha.text ?? "").isEmpty {
+            return "Os campos de nome, email e senha são de preenchimento obrigatório. Verifique se todos estão prenchidos!"
+        }
+        
+        return nil;
+    }
+    
     
     @IBAction func Cadastrar(_ sender: Any) {
-        if (!(tfName.text ?? "").isEmpty && !(tfEmail.text ?? "").isEmpty && !(tfSenha.text ?? "").isEmpty && sReceberEmail.isOn) {
-            print("email: \(tfEmail.text!), nome:\(tfName.text!), senha: \(tfSenha.text!), receber email: \(sReceberEmail.isOn)")
+        //Verifica se os campos obrigatorios estão preenchidos e cadastra o cliente
+        let erro = validaCampos()
+        if erro != nil{
+            exibirAlerta(erro!)
+            //Exibe um alerta caso os campos obrigatorios não estejam preenchidos
+//            let alert = UIAlertController(title: "Ops!", message: erro, preferredStyle: .alert)
+//            let action = UIAlertAction(title: "OK", style: .cancel) { (alert) in
+//                self.dismiss(animated: true, completion: nil)
+//            }
+//            alert.addAction(action)
+//            self.present(alert, animated: true, completion: nil)
+            return;
         }
+        
+        //Retirar obrigatoriedade de receber emails
+        //sReceberEmail.isOn
+        //Retira espaços em branco no inicio e final dos parametros
+        let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let nome = tfName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let senha = tfSenha.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // Criar usuario
+        Auth.auth().createUser(withEmail: email, password: senha) { (result, err) in
+            
+            if err != nil {
+                self.exibirAlerta("Erro ao cadastrar usuário")
+            }
+            else {
+                // Se o usuario foi cadastrado com sucesso, salva as demais informações
+                let db = Firestore.firestore()
+                
+                db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
+                    
+                    if error != nil {
+                        // Show error message
+                        self.exibirAlerta("Erro ao salvar os dados do usuario")
+                    }
+                }
+                
+                self.transicaoParaHome()
+            }
+        }
+    }
+    
+    func transicaoParaHome(){
+        UserDefaults.standard.set(true, forKey: "UsuarioLogado")
+        
+        let usuarioLogado = NSNotification.Name(rawValue: "usuarioLogado")
+        NotificationCenter.default.post(name: usuarioLogado, object: nil)
+    }
+    
+    func exibirAlerta(_ mensagem:String){
+        //Exibe um alerta caso os campos obrigatorios não estejam preenchidos
+        let alert = UIAlertController(title: "Ops!", message: mensagem, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel) { (alert) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
     /*
