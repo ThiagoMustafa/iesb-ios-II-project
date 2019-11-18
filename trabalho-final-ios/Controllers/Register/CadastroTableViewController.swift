@@ -53,8 +53,6 @@ class CadastroTableViewController: UITableViewController {
             return;
         }
         
-        //Retirar obrigatoriedade de receber emails
-        //sReceberEmail.isOn
         //Retira espaços em branco no inicio e final dos parametros
         let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let nome = tfName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -73,7 +71,7 @@ class CadastroTableViewController: UITableViewController {
                 db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
                     
                     if error != nil {
-                        // Show error message
+                        // Exibe mensagem de erro
                         self.exibirAlerta("Erro ao salvar os dados do usuario")
                     }
                 }

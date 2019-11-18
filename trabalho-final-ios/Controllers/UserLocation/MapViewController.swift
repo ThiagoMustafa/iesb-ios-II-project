@@ -14,6 +14,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
     @IBOutlet weak var mapView: MKMapView!
 
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -58,7 +59,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         //centerMap(locValue)
     }
     
-
+    @IBAction func btnLogout(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "UsuarioLogado")
+        
+        let logoutName = NSNotification.Name("usuarioLogout")
+        NotificationCenter.default.post(name: logoutName, object: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

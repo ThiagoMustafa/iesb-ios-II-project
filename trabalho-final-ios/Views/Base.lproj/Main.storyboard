@@ -64,7 +64,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pbh-h7-IYS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MJX-7k-jcv"/>
+                    <navigationItem key="navigationItem" id="MJX-7k-jcv">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="gf9-ji-1Zi">
+                            <connections>
+                                <action selector="btnLogout:" destination="IbA-d7-3Pk" id="noQ-AO-DLE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="4OZ-pU-q45" id="1hR-tv-env"/>
                     </connections>
