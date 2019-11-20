@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Film : Codable {
+struct Film {
+    let id: Int
     let Title: String
     let Description: String
     let Year: String
@@ -16,16 +17,16 @@ struct Film : Codable {
     let PosterImage: String
     let Genero: String
     let Rating: Decimal
-    let Location: Location
-    let SimilarFilms: [SimilarFilm]
+    let Location: Location?
+    let SimilarFilms: [SimilarFilm]?
 }
 
-struct SimilarFilm: Codable {
+struct SimilarFilm {
     let PosterImage: String
     let Title: String
 }
 
-struct Location: Codable {
+struct Location {
     let Latitude: Decimal
     let Longitude: Decimal
     let Description: String

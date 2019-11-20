@@ -9,4 +9,9 @@
 import UIKit
 
 class FilmApiController {
+    
+    func getTopRated() -> ApiObjectReturn {
+        
+        
+    }
 }

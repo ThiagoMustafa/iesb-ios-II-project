@@ -9,5 +9,7 @@
 import UIKit
 
 class apiConfig {
-    static let apiKey = "6302949d7afd94f9edd948caf36b33c2"
+    public let apiKey = "6302949d7afd94f9edd948caf36b33c2"
+    public let apiUrl = "https://api.themoviedb.org/3/"
+    public let apiResultLanguage = "&language=pt-BR"
 }
