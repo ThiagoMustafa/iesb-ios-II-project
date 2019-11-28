@@ -16,6 +16,7 @@ class CadastroTableViewController: UITableViewController {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfSenha: UITextField!
     @IBOutlet weak var sReceberEmail: UISwitch!
+    @IBOutlet weak var ivFoto: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,37 @@ class CadastroTableViewController: UITableViewController {
         return nil;
     }
     
+    @IBAction func SelecionarImagem(_ sender: Any) {
+        let alert = UIAlertController(title: "Selecionar foto", message: "De onde você quer selecionar sua foto?", preferredStyle: .actionSheet)
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            let cameraAction = UIAlertAction(title: "Câmera", style: .default, handler: {(action) in
+                self.selectPicture(sourceType: .camera)
+            })
+            alert.addAction(cameraAction)
+        }
+        
+        let libraryAction = UIAlertAction(title: "Biblioteca de fotos", style: .default){
+            (action) in
+            self.selectPicture(sourceType: .photoLibrary)
+        }
+        alert.addAction(libraryAction)
+        
+        let photosAction = UIAlertAction(title: "Album de fotos", style: .default){
+            (action) in
+            self.selectPicture(sourceType: .savedPhotosAlbum)
+        }
+        alert.addAction(photosAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+    }
+    
+    func selectPicture(sourceType: UIImagePickerController.SourceType) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = sourceType
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func Cadastrar(_ sender: Any) {
         //Verifica se os campos obrigatorios estão preenchidos e cadastra o cliente
@@ -97,60 +129,29 @@ class CadastroTableViewController: UITableViewController {
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+}
 
-        // Configure the cell...
-
-        return cell
+extension CadastroTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let originalWidth = image.size.width
+            let aspectRatio = originalWidth / image.size.height
+            var smallSize: CGSize
+            if aspectRatio > 1 {
+                smallSize = CGSize(width: 100, height: 100/aspectRatio)
+            }else{
+                smallSize = CGSize(width: 100 * aspectRatio, height: 100)
+            }
+            
+            UIGraphicsBeginImageContext(smallSize)
+            image.draw(in: CGRect(x: 0, y: 0, width: smallSize.width, height: smallSize.height))
+            let smallImage = UIGraphicsGetImageFromCurrentImageContext()
+            
+            UIGraphicsEndImageContext()
+            
+            dismiss(animated: true, completion: {
+                self.ivFoto.image = smallImage 
+            })
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

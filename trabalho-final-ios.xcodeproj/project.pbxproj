@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1301436023900B4100E8E1EA /* av7801257c459e42a24b5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1301435F23900B4000E8E1EA /* av7801257c459e42a24b5.png */; };
 		6B6B27D3FC4708E707A2C763 /* Pods_trabalho_final_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3E2E77B73CAECC1411F89 /* Pods_trabalho_final_iosUITests.framework */; };
 		7DF5C5B18A3EF1F5C0CA7875 /* Pods_trabalho_final_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF14492680ABF8021258E35 /* Pods_trabalho_final_iosTests.framework */; };
 		926F8672236BB479009E5E69 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F8671236BB479009E5E69 /* DetailsTableViewController.swift */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		03A1D10C03DDCD8CEF6F6263 /* Pods-trabalho-final-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trabalho-final-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trabalho-final-iosUITests/Pods-trabalho-final-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1301435F23900B4000E8E1EA /* av7801257c459e42a24b5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = av7801257c459e42a24b5.png; sourceTree = "<group>"; };
 		4935A34A71D7345B9990671F /* Pods-trabalho-final-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trabalho-final-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-trabalho-final-iosTests/Pods-trabalho-final-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		77D3E2E77B73CAECC1411F89 /* Pods_trabalho_final_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trabalho_final_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8155E2FD9EB03A1B69A93039 /* Pods-trabalho-final-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trabalho-final-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-trabalho-final-iosUITests/Pods-trabalho-final-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		FEE32BFF2300E99200140E93 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1301435F23900B4000E8E1EA /* av7801257c459e42a24b5.png */,
 				92CD9410236B9E870003BCCA /* ant-man-poster.jpg */,
 				92CD940E236B9E870003BCCA /* avangers-ultimate-poster.jpg */,
 				92CD940F236B9E870003BCCA /* avangers-ultron-poster.jpg */,
@@ -446,6 +449,7 @@
 				FEE32C062300EE0C00140E93 /* user-logo.png in Resources */,
 				FEE32C052300EE0C00140E93 /* user-logged.jpg in Resources */,
 				92CD9411236B9E870003BCCA /* avangers-ultimate-poster.jpg in Resources */,
+				1301436023900B4100E8E1EA /* av7801257c459e42a24b5.png in Resources */,
 				FEE32C082300EE0C00140E93 /* liked.png in Resources */,
 				FEE32C072300EE0C00140E93 /* logo.png in Resources */,
 				FEC4D66522FF98F700046F85 /* LaunchScreen.storyboard in Resources */,
