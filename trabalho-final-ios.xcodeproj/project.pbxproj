@@ -26,6 +26,9 @@
 		D393FCD12301BFAF0077A303 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD02301BFAF0077A303 /* Film.swift */; };
 		D393FCD42301C2F40077A303 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D393FCD32301C2F40077A303 /* data.json */; };
 		D393FCD62301C80F0077A303 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */; };
+		FE9868D7239056350024A615 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868D6239056350024A615 /* ButtonExtension.swift */; };
+		FE9868D9239063510024A615 /* LoginExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868D8239063510024A615 /* LoginExtensions.swift */; };
+		FE9868DB239066D90024A615 /* RegisterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868DA239066D90024A615 /* RegisterExtensions.swift */; };
 		FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */; };
 		FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E1235E51D200536ABA /* MapViewController.swift */; };
 		FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */; };
@@ -90,6 +93,9 @@
 		D393FCD52301C80F0077A303 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		DC93D017E4A9590343E3ED9A /* Pods_trabalho_final_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trabalho_final_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E175AEE56AED1FECC747D4EF /* Pods-trabalho-final-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trabalho-final-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trabalho-final-iosTests/Pods-trabalho-final-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE9868D6239056350024A615 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		FE9868D8239063510024A615 /* LoginExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtensions.swift; sourceTree = "<group>"; };
+		FE9868DA239066D90024A615 /* RegisterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterExtensions.swift; sourceTree = "<group>"; };
 		FEA8B3D7235C856F00536ABA /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		FEA8B3E1235E51D200536ABA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEA8B3E3235E6DEF00536ABA /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 		D393FCCD2301BEB40077A303 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE9868D5239056010024A615 /* Extensions */,
 				926F8682236BB8F9009E5E69 /* UserLocation */,
 				926F8681236BB8DE009E5E69 /* FavoriteFilms */,
 				926F8680236BB8A0009E5E69 /* FilmsList */,
@@ -264,6 +271,16 @@
 				8155E2FD9EB03A1B69A93039 /* Pods-trabalho-final-iosUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE9868D5239056010024A615 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE9868D6239056350024A615 /* ButtonExtension.swift */,
+				FE9868D8239063510024A615 /* LoginExtensions.swift */,
+				FE9868DA239066D90024A615 /* RegisterExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FEC4D64E22FF98F200046F85 = {
@@ -594,6 +611,8 @@
 				926F8672236BB479009E5E69 /* DetailsTableViewController.swift in Sources */,
 				D393FCCC2301BEAD0077A303 /* FilmsTableViewController.swift in Sources */,
 				926F867D236BB800009E5E69 /* SimilarFilmsTableViewCell.swift in Sources */,
+				FE9868DB239066D90024A615 /* RegisterExtensions.swift in Sources */,
+				FE9868D7239056350024A615 /* ButtonExtension.swift in Sources */,
 				FEA8B3E6235E74D200536ABA /* FavoritesFilmsTableViewCell.swift in Sources */,
 				926F8679236BB7A5009E5E69 /* FilmDetailsTableViewCell.swift in Sources */,
 				FEA8B3E4235E6DEF00536ABA /* FavoritesTableViewController.swift in Sources */,
@@ -601,6 +620,7 @@
 				FEA8B3D8235C856F00536ABA /* LoginTableViewController.swift in Sources */,
 				FEE742F42303C0C600DD0EC6 /* CadastroTableViewController.swift in Sources */,
 				FEE2E73923036E5100F9B298 /* User.swift in Sources */,
+				FE9868D9239063510024A615 /* LoginExtensions.swift in Sources */,
 				FEA8B3E2235E51D200536ABA /* MapViewController.swift in Sources */,
 				926F8675236BB747009E5E69 /* FilmHeaderTableViewCell.swift in Sources */,
 				FEC4D65B22FF98F300046F85 /* AppDelegate.swift in Sources */,

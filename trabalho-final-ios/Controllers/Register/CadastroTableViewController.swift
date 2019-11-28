@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseAnalytics
 
 class CadastroTableViewController: UITableViewController {
 
@@ -17,6 +18,8 @@ class CadastroTableViewController: UITableViewController {
     @IBOutlet weak var tfSenha: UITextField!
     @IBOutlet weak var sReceberEmail: UISwitch!
     @IBOutlet weak var ivFoto: UIImageView!
+    @IBOutlet weak var btnSelecionarImagem: UIButton!
+    @IBOutlet weak var btnCadastro: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,74 +76,86 @@ class CadastroTableViewController: UITableViewController {
     }
     
     @IBAction func Cadastrar(_ sender: Any) {
-        //Verifica se os campos obrigatorios estão preenchidos e cadastra o cliente
-        let erro = validaCampos()
-        if erro != nil{
-            exibirAlerta(erro!)
-            //Exibe um alerta caso os campos obrigatorios não estejam preenchidos
-//            let alert = UIAlertController(title: "Ops!", message: erro, preferredStyle: .alert)
-//            let action = UIAlertAction(title: "OK", style: .cancel) { (alert) in
-//                self.dismiss(animated: true, completion: nil)
-//            }
-//            alert.addAction(action)
-//            self.present(alert, animated: true, completion: nil)
-            return;
-        }
-        
-        //Retira espaços em branco no inicio e final dos parametros
-        let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let nome = tfName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let senha = tfSenha.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        // Criar usuario
-        Auth.auth().createUser(withEmail: email, password: senha) { (result, err) in
-            
-            if err != nil {
-                self.exibirAlerta("Erro ao cadastrar usuário")
+        self.enableFields(false)
+        self.btnCadastro.loadingIndicator(true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            //Verifica se os campos obrigatorios estão preenchidos e cadastra o cliente
+            let erro = self.validaCampos()
+            if erro != nil{
+                self.enableFields(true)
+                self.btnCadastro.loadingIndicator(false)
+                self.exibirAlerta(erro!)
+                return;
             }
-            else {
+            
+            //Retira espaços em branco no inicio e final dos parametros
+            let email = self.tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let nome = self.tfName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let senha = self.tfSenha.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Criar usuario
+            Auth.auth().createUser(withEmail: email, password: senha) { (result, err) in
                 
-                //successfully authenticated user
-                let imageName = NSUUID().uuidString
-                let storageRef = Storage.storage().reference().child("profile_images").child("\(imageName).png")
-                
-                if let uploadData = self.ivFoto.image!.pngData() {
+                if err != nil {
+                    self.enableFields(true)
+                    self.btnCadastro.loadingIndicator(false)
+                    self.exibirAlerta("Erro ao cadastrar usuário")
+                }
+                else {
                     
-                    storageRef.putData(uploadData, metadata: nil, completion: { (_, err) in
+                    //successfully authenticated user
+                    let imageName = NSUUID().uuidString
+                    let storageRef = Storage.storage().reference().child("profile_images").child("\(imageName).png")
+                    
+                    if let uploadData = self.ivFoto.image!.pngData() {
                         
-                        if let error = err {
-                            self.exibirAlerta("Ocorreu um erro ao salvar alguns dados do usuário")
-                            print(error)
-                            return
-                        }
-                        
-                        storageRef.downloadURL(completion: { (url, err) in
-                            if let err = err {
-                                print(err)
+                        storageRef.putData(uploadData, metadata: nil, completion: { (_, err) in
+                            
+                            if let error = err {
+                                self.exibirAlerta("Ocorreu um erro ao salvar alguns dados do usuário")
+                                self.enableFields(true)
+                                self.btnCadastro.loadingIndicator(false)
+                                print(error)
                                 return
                             }
                             
-                            guard let url = url else { return }
-                            
-                            
-                            // Se o usuario foi cadastrado com sucesso, salva as demais informações
-                            let db = Firestore.firestore()
-                            
-                            db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome,"profileImageUrl": url.absoluteString, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
-                                
-                                if error != nil {
-                                    // Exibe mensagem de erro
-                                    self.exibirAlerta("Erro ao salvar os dados do usuario")
+                            storageRef.downloadURL(completion: { (url, err) in
+                                if let err = err {
+                                    print(err)
+                                    self.enableFields(true)
+                                    self.btnCadastro.loadingIndicator(false)
+                                    return
                                 }
-                            }
+                                
+                                guard let url = url else { return }
+                                
+                                
+                                // Se o usuario foi cadastrado com sucesso, salva as demais informações
+                                let db = Firestore.firestore()
+                                
+                                db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome,"profileImageUrl": url.absoluteString, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
+                                    
+                                    if error != nil {
+                                        self.enableFields(true)
+                                        self.btnCadastro.loadingIndicator(false)
+                                        // Exibe mensagem de erro
+                                        self.exibirAlerta("Erro ao salvar os dados do usuario")
+                                        return
+                                    }
+                                    
+                                    Analytics.logEvent("sign_up", parameters: ["user_id": result?.user.uid, "user_email": result?.user.email])
+                                }
+                                self.enableFields(true)
+                                self.btnCadastro.loadingIndicator(false)
+                                self.transicaoParaHome()
+                            })
                             
-                            self.transicaoParaHome()
                         })
-                        
-                    })
+                    }
                 }
             }
         }
+
     }
     
     func transicaoParaHome(){
@@ -161,27 +176,27 @@ class CadastroTableViewController: UITableViewController {
     }
 }
 
-extension CadastroTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            let originalWidth = image.size.width
-            let aspectRatio = originalWidth / image.size.height
-            var smallSize: CGSize
-            if aspectRatio > 1 {
-                smallSize = CGSize(width: 100, height: 100/aspectRatio)
-            }else{
-                smallSize = CGSize(width: 100 * aspectRatio, height: 100)
-            }
-            
-            UIGraphicsBeginImageContext(smallSize)
-            image.draw(in: CGRect(x: 0, y: 0, width: smallSize.width, height: smallSize.height))
-            let smallImage = UIGraphicsGetImageFromCurrentImageContext()
-            
-            UIGraphicsEndImageContext()
-            
-            dismiss(animated: true, completion: {
-                self.ivFoto.image = smallImage 
-            })
-        }
-    }
-}
+//extension CadastroTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+//        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+//            let originalWidth = image.size.width
+//            let aspectRatio = originalWidth / image.size.height
+//            var smallSize: CGSize
+//            if aspectRatio > 1 {
+//                smallSize = CGSize(width: 100, height: 100/aspectRatio)
+//            }else{
+//                smallSize = CGSize(width: 100 * aspectRatio, height: 100)
+//            }
+//
+//            UIGraphicsBeginImageContext(smallSize)
+//            image.draw(in: CGRect(x: 0, y: 0, width: smallSize.width, height: smallSize.height))
+//            let smallImage = UIGraphicsGetImageFromCurrentImageContext()
+//
+//            UIGraphicsEndImageContext()
+//
+//            dismiss(animated: true, completion: {
+//                self.ivFoto.image = smallImage
+//            })
+//        }
+//    }
+//}

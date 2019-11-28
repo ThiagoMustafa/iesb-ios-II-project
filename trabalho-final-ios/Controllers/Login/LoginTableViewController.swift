@@ -1,11 +1,12 @@
 import UIKit
 import FirebaseAuth
+import FirebaseAnalytics
 
 class LoginTableViewController: UITableViewController {
 
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
-    
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,25 +39,35 @@ class LoginTableViewController: UITableViewController {
     }
     
     @IBAction func btnLogin(_ sender: Any) {
-        
-        let erro = validaCampos()
-        if erro != nil{
-            self.exibirAlerta(erro!)
-            return;
-        }
-        //Retira espaços em branco no inicio e final dos parametros
-        let email = tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let senha = tfPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        // Autentica usuario
-        Auth.auth().signIn(withEmail: email, password: senha) { (result, error) in
-            
-            if error != nil {
-                // Couldn't sign in
-                self.exibirAlerta("Usuário não encontrado!")
+        self.btnLogin.loadingIndicator(true)
+        self.enableFields(false)
+    //DELAY DE 3 SEGUNDOS APENAS PARA EXIBIÇÃO DA ANIMAÇÃO
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            let erro = self.validaCampos()
+            if erro != nil{
+                self.btnLogin.loadingIndicator(false)
+                self.enableFields(true)
+                self.exibirAlerta(erro!)
+                return;
             }
-            else {
-                self.transicaoParaHome()
+            //Retira espaços em branco no inicio e final dos parametros
+            let email = self.tfEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let senha = self.tfPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Autentica usuario
+            Auth.auth().signIn(withEmail: email, password: senha) { (result, error) in
+                
+                if error != nil {
+                    self.btnLogin.loadingIndicator(false)
+                    self.enableFields(true)
+                    self.exibirAlerta("Usuário não encontrado!")
+                }
+                else {
+                    Analytics.logEvent("login", parameters: ["user_id": result?.user.uid, "user_email": result?.user.email])
+                    self.btnLogin.loadingIndicator(false)
+                    self.enableFields(true)
+                    self.transicaoParaHome()
+                }
             }
         }
     }

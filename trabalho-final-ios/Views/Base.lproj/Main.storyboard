@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXn-4y-FmM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXn-4y-FmM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4624" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -194,10 +194,11 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K20-M6-2xd">
                                                     <rect key="frame" x="20" y="119" width="374" height="50"/>
+                                                    <color key="backgroundColor" red="1" green="0.30980392156862746" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="1X1-FR-mhC"/>
                                                     </constraints>
-                                                    <color key="tintColor" red="0.800368309" green="0.24611666800000001" blue="0.1033354476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="ENTRAR"/>
                                                     <connections>
                                                         <action selector="btnLogin:" destination="owM-u5-E43" eventType="touchUpInside" id="ocF-LS-L1l"/>
@@ -205,7 +206,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bg-tT-qqx">
                                                     <rect key="frame" x="20" y="177" width="374" height="50"/>
-                                                    <color key="backgroundColor" red="1" green="0.30948342010000002" blue="0.1293106312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.14824822545051575" green="0.4537818431854248" blue="0.80089050531387329" alpha="0.71115757042253525" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="ldg-5v-tYf"/>
                                                     </constraints>
@@ -238,6 +239,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Pg4-Ji-gzC"/>
                     <connections>
+                        <outlet property="btnLogin" destination="K20-M6-2xd" id="msk-jz-ZTM"/>
                         <outlet property="tfEmail" destination="a1h-5p-Q6e" id="1Qq-AX-D1R"/>
                         <outlet property="tfPassword" destination="Jrp-KF-EOs" id="iAn-ED-0nS"/>
                     </connections>
@@ -438,6 +440,8 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="btnCadastro" destination="zk8-xH-qDs" id="yqq-WH-048"/>
+                        <outlet property="btnSelecionarImagem" destination="KUI-Iu-9DJ" id="wGK-fO-f8b"/>
                         <outlet property="ivFoto" destination="Ciq-iK-KvA" id="ZHx-08-bCp"/>
                         <outlet property="sReceberEmail" destination="GNO-h0-YYJ" id="eYK-qO-EL7"/>
                         <outlet property="tfEmail" destination="zEQ-mP-8Ye" id="0gD-Yw-2EE"/>
@@ -613,7 +617,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxq-Gw-rqf">
-                                                    <rect key="frame" x="129" y="29" width="599" height="30"/>
+                                                    <rect key="frame" x="129" y="29" width="245" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="BPF-Va-Djl"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EJz-iF-afr"/>
@@ -994,7 +998,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="av7801257c459e42a24b5.png" width="560" height="560"/>
+        <image name="av7801257c459e42a24b5.png" width="420" height="420"/>
         <image name="liked.png" width="70" height="63"/>
         <image name="logo.png" width="901" height="1284"/>
         <image name="poster.jpg" width="185" height="278"/>
