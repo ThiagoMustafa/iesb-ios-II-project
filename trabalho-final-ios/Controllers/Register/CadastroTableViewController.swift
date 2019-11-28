@@ -61,6 +61,8 @@ class CadastroTableViewController: UITableViewController {
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
+    
+        present(alert, animated: true, completion: nil)
     }
     
     func selectPicture(sourceType: UIImagePickerController.SourceType) {
@@ -97,18 +99,46 @@ class CadastroTableViewController: UITableViewController {
                 self.exibirAlerta("Erro ao cadastrar usuário")
             }
             else {
-                // Se o usuario foi cadastrado com sucesso, salva as demais informações
-                let db = Firestore.firestore()
                 
-                db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
+                //successfully authenticated user
+                let imageName = NSUUID().uuidString
+                let storageRef = Storage.storage().reference().child("profile_images").child("\(imageName).png")
+                
+                if let uploadData = self.ivFoto.image!.pngData() {
                     
-                    if error != nil {
-                        // Exibe mensagem de erro
-                        self.exibirAlerta("Erro ao salvar os dados do usuario")
-                    }
+                    storageRef.putData(uploadData, metadata: nil, completion: { (_, err) in
+                        
+                        if let error = err {
+                            self.exibirAlerta("Ocorreu um erro ao salvar alguns dados do usuário")
+                            print(error)
+                            return
+                        }
+                        
+                        storageRef.downloadURL(completion: { (url, err) in
+                            if let err = err {
+                                print(err)
+                                return
+                            }
+                            
+                            guard let url = url else { return }
+                            
+                            
+                            // Se o usuario foi cadastrado com sucesso, salva as demais informações
+                            let db = Firestore.firestore()
+                            
+                            db.collection("users").addDocument(data: ["uid": result!.user.uid, "nome":nome,"profileImageUrl": url.absoluteString, "receberEmails":self.sReceberEmail.isOn ]) { (error) in
+                                
+                                if error != nil {
+                                    // Exibe mensagem de erro
+                                    self.exibirAlerta("Erro ao salvar os dados do usuario")
+                                }
+                            }
+                            
+                            self.transicaoParaHome()
+                        })
+                        
+                    })
                 }
-                
-                self.transicaoParaHome()
             }
         }
     }
